@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.5;
+  font-size: 20px;
+  width: 1920px;
+}
+
+/* header */
+.header {
+  background-color: #0068b6;
+  color: #fff;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 0.5px;
+}
+.header-link {
+  margin-left: 70px;
+  margin-right: 32px;
+  width: 74px;
+  height: 60px;
+}
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-left: 40px;
+}
+span {
+  font-size: 24px;
+}
+
+.header-nav {
+  padding: 3px;
+}
+.header-nav-list {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 120px;
+}
+.header-nav-item {
+  list-style: none;
+  text-decoration: none;
+}
+
+.btn-wrap {
+  margin-right: 172px;
+}
+
+.header-btn {
+  background-color: #fff;
+  border-radius: 6px;
+  border: #fff;
+  padding: 12px 32px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.header-btn + .header-btn {
+  margin-left: 32px;
+}
+
+/* 検索フォームを初期状態では隠す */
+.search-form {
+  border-radius: 60px;
+  border: solid 1px #fff; /* 枠線が見えるように白色で設定 */
+  text-align: center;
+  padding: 5px 10px; /* フォームのサイズを調整 */
+}
+
+/* 検索ボタン */
+.search-btn {
+  cursor: pointer; /* ボタンであることが分かるようにポインタを設定 */
+  font-size: 16px; /* ボタンのテキストサイズを調整 */
+  padding: 5px 10px; /* ボタンのサイズを調整 */
+  border: none; /* 枠線を無くす */
+  background-color: #0068b6; /* ボタンの背景色をヘッダーと同じ色に */
+  color: #fff; /* ボタンのテキスト色を白に */
+  border-radius: 50%; /* ボタンを円形に */
+}
+
+/* section */
+
+/* item */
+.item-main {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  font-size: 64px;
+}
+.item-name {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 36px;
+  margin-top: 30px;
+}
+.item-img {
+  width: 120px;
+  height: 120px;
+}
+
+.item-txt {
+  font-size: 24px;
+}
+
+/* kv */
+.kv {
+  background-color: #d9d9d9;
+}
+
+.kv-img {
+  width: 1920px;
+}
+
+.kv-txt {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  font-size: 60px;
+  font-weight: bold;
+  color: #ede8e8e7;
+}
+
+.latest-info {
+  background-color: #d9d9d9;
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+/* graph */
+.pie {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  height: 300px;
+  background-image: conic-gradient(#0068b6 0% 100%);
+  border-radius: 50%;
+}
+
+.pie span {
+  position: absolute;
+  top: 50%;
+  right: 43%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.graph {
+  margin-top: 60px;
+}
+.graph-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.graph-item {
+  text-align: center;
+}
+.graph-txt-b {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.graph-txt-t {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+/* introduction */
+
+.introduction-item-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.introduction-item {
+  display: inline-block;
+  border: 2px solid #0068b6;
+  border-radius: 12px;
+  padding: 2em;
+  padding-left: 60px;
+}
+.introduction-item-box {
+  display: flex;
+  margin-bottom: 36px;
+  width: 790px;
+}
+
+/* move */
+.move-item-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.move-item {
+  display: inline-block;
+  border: 2px solid #0068b6;
+  border-radius: 12px;
+  padding: 2em;
+  padding-left: 60px;
+}
+.move-item-box {
+  display: flex;
+}
+
+.move-name {
+  margin: 0 auto;
+  margin-left: 36px;
+}
+
+.move-button-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+.move-button {
+  justify-content: center;
+  border: 2px solid #0068b6;
+  background-color: #0068b6;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 32px;
+  padding: 8px 32px;
+}
+
+/* member */
+
+.member-wrap {
+  display: flex;
+}
+.member-item {
+  display: inline-block;
+  border: 2px solid #0068b6;
+  border-radius: 12px;
+  padding: 2em;
+  padding-left: 60px;
+  padding-right: 240px;
+  margin-left: 36px;
+}
+.member-item-wrap {
+  padding-left: 60px;
+}
+.member-item-box {
+  display: flex;
+}
+
+.member-item-img {
+  width: 190px;
+  height: 190px;
+}
+.member-item-name {
+  margin-left: 0;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.member-link-wrap {
+  margin-left: 48px;
+  margin: 0 auto;
+}
+
+.member-link-item {
+  display: block;
+  border: 2px solid #0068b6;
+  border-radius: 12px;
+  padding: 12px 164px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.member-link-txt {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* notice */
+
+.notice-item {
+  border: 2px solid #0068b6;
+  border-radius: 12px;
+  padding: 1em;
+  width: 1716px;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.notice-item-wrap {
+}
+
+.notice-item-txt {
+  border-bottom: 1px solid #0068b6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #6d99ba;
+  color: #fff;
+}
+.footer-main {
+  display: flex;
+  border-bottom: solid 0.5px;
+  padding-top: 60px;
+}
+.footer-main-wrap {
+  margin-left: 120px;
+  padding-bottom: 300px;
+}
+
+.footer-main-txt {
+  font-size: 48px;
+  font-weight: bold;
+}
+.footer-sub-txt {
+  font-weight: bold;
+}
+
+.footer-nav {
+  display: flex;
+}
+.footer-nav-warp {
+  margin-left: 144px;
+}
+.footer-nav-main {
+  color: #0068b6;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-nav-item {
+  text-decoration: none;
+}
+
+.footer-cm {
+  margin-left: 144px;
+  margin-top: 60px;
+  background: #fff;
+  color: #000;
+  width: 400px;
+  height: 144px;
+  text-align: center;
+}
+.footer-cm-txt {
+  margin: 0 auto;
+}
+
+.copy {
+  text-align: center;
+  color: #000;
+  padding: 20px;
+}
