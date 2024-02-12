@@ -330,6 +330,7 @@ span {
 }
 
 .sidebar-speech-balloon {
+  position: relative;
   background-color: #6d99ba;
   width: 455px;
   color: #fff;
@@ -337,6 +338,20 @@ span {
   padding-top: 36px;
   padding-left: 36px;
   padding-bottom: 36px;
+}
+
+/* アイコンを下に表示 */
+.sidebar-speech-balloon:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 20px;
+  bottom: -15px;
+  border-top: 15px solid #6d99ba;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
 }
 
 .sidebar-contents {
@@ -359,6 +374,47 @@ span {
   margin-left: 60px;
   padding-left: 60px;
   padding-right: 120px;
+}
+
+.contents-ttl {
+  font-size: 40px;
+  font-weight: bold;
+  border-bottom: solid 1px #6d99ba;
+  padding-top: 96px;
+  padding-bottom: 32px;
+}
+.contents-txt {
+  margin-top: 60px;
+  line-height: 2;
+  margin-bottom: 60px;
+}
+
+.contents-example {
+  display: flex;
+  background-color: #f0f1f4;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-right: 60px;
+  margin-bottom: 200px;
+}
+.contents-rectangle {
+  width: 198px;
+  height: 198px;
+}
+
+.contents-example-wrap {
+  margin-left: 30px;
+}
+
+.contents-example-date {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.contents-example-ttl {
+  font-size: 24px;
+  margin-bottom: 12px;
 }
 /* footer */
 
